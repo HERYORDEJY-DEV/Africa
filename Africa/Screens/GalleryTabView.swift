@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct GalleryTabView: View {
-    var body: some View {
-        Text("Hello, GalleryTabView!")
-    }
+	var body: some View {
+		Text("Hello, GalleryTabView!")
+	}
 }
 
 struct GalleryTabView_Previews: PreviewProvider {
-    static var previews: some View {
-        GalleryTabView()
-    }
+	static var previews: some View {
+		GalleryTabView()
+	}
 }
