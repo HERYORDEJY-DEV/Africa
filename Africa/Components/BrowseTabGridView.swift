@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct BrowseTabGridView: View {
-	let columns = [GridItem(.flexible()), GridItem(.flexible())]
+	var columns: [GridItem] = [GridItem(.flexible()), GridItem(.flexible())]
 	var animalsData: [BrowseTabAnimalModel] = loadModelDataFile("animals.json")
 
 	var body: some View {
@@ -26,6 +26,6 @@ struct BrowseTabGridView: View {
 
 struct BrowseTabGridView_Previews: PreviewProvider {
 	static var previews: some View {
-		BrowseTabGridView()
+		BrowseTabGridView(columns: [GridItem(.flexible()), GridItem(.flexible())])
 	}
 }
